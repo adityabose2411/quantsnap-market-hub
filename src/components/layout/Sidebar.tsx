@@ -7,8 +7,8 @@ import {
   Sparkles,
   TrendingUp,
   User,
-  Zap,
 } from "lucide-react";
+import quantsnapLogo from "@/assets/quantsnap-logo.png";
 
 const navItems = [
   { to: "/", icon: Home, label: "Feed" },
@@ -26,8 +26,8 @@ export default function Sidebar() {
     <aside className="hidden lg:flex flex-col w-64 h-screen fixed left-0 top-0 bg-sidebar border-r border-sidebar-border z-40">
       {/* Logo */}
       <div className="flex items-center gap-2.5 px-6 py-5 border-b border-sidebar-border">
-        <div className="w-9 h-9 rounded-lg gradient-primary flex items-center justify-center">
-          <Zap className="w-5 h-5 text-primary-foreground" />
+        <div className="w-9 h-9 rounded-lg overflow-hidden flex items-center justify-center">
+          <img src={quantsnapLogo} alt="QuantSnap" className="w-9 h-9 object-cover" />
         </div>
         <div>
           <h1 className="text-lg font-bold tracking-tight text-foreground">
