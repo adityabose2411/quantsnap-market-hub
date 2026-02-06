@@ -1,12 +1,13 @@
-import { Bell, Search, Zap } from "lucide-react";
+import { Bell, Search } from "lucide-react";
+import quantsnapLogo from "@/assets/quantsnap-logo.png";
 
 export default function MobileHeader() {
   return (
     <header className="lg:hidden sticky top-0 z-40 glass-elevated border-b border-border">
       <div className="flex items-center justify-between px-4 py-3">
         <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg gradient-primary flex items-center justify-center">
-            <Zap className="w-4 h-4 text-primary-foreground" />
+          <div className="w-8 h-8 rounded-lg overflow-hidden flex items-center justify-center">
+            <img src={quantsnapLogo} alt="QuantSnap" className="w-8 h-8 object-cover" />
           </div>
           <span className="text-lg font-bold tracking-tight text-foreground">
             QuantSnap
